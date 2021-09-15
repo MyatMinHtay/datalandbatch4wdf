@@ -1,0 +1,54 @@
+.div1{
+	width: 300px;
+	height: 100px;
+	background-color: green;
+
+}
+
+/*.div1:first-child{
+	width: 300px;
+	height: 100px;
+	background-color: orange;
+	color: red;
+}*/
+
+/*first-child နဲ႕တူတဲ့ဟာက first-of-type */
+
+/*.div1:first-of-type{
+	background-color: black;
+}*/
+/*ေနာက္ဆံုးကို ဖမ္းခ်င္ရင္ last of type ကို သံဳးရတယ္*/
+/*.div1:last-of-type{
+	background-color: black;
+}
+*/
+
+/*.div1:nth-of-type(3){
+	background-color: red;
+	border-radius: 50px;
+}*/
+
+/*.div1:nth-of-type(odd){
+	background-color: red;
+	border-radius: 50px;
+}*/
+
+/*.div1:nth-of-type(even){
+	background-color: red;
+	border-radius: 50px;
+}
+*/
+.div1:nth-child(3){
+	background-color: red;
+	border-radius: 50px;
+}
+
+.div1:nth-of-type(3){
+	background-color: red;
+	border-radius: 50px;
+}
+/*
+/*nth-child က ရွိသမွ်အကုန္လံဳးကို child လို႔သတ္မွတ္သြားတယ္ 
+
+nth-of-type က div ေတြကိုပဲမွတ္တယ္ */
+/*1PSEUDO WDF4077*/

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+:root{
+	--wcc: #f4f4f4;
+	--gyc: #777;
+	--dbc: #2541a8;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Squada One', cursive;
+	/*vh = view port height*/
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/*overflow နဲ့ margin scroll ကို ေဖ်ာက္လို႔ရတယ္*/
+	/*margin: 0;*/
+	overflow: hidden;
+}
+
+.container{
+	width: 480px;
+	background-color: var(--wcc);
+				/*h v b c*/
+	box-shadow:0 2px 10px rgba(0, 0, 0, 0.3) ;
+	border-radius: 5px;
+}
+
+.container h2{
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.form{
+			/*top&bottom    left&right*/
+	padding: 30px 40px;
+}
+
+.form .form-control{
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+.form-control label{
+	display: block;
+	color: var(--gyc);
+	margin-bottom: 5px;
+}
+
+.form-control .input{
+	width: 100%;
+	padding: 10px;
+	font-family:inherit;
+}
+
+.form-control .input:focus{
+	outline: 0;
+
+}
+
+.form-control .input::placeholder{
+	color: rgba(0, 0, 0, 0.3);
+
+}
+
+.form .btn{
+	width: 100%;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 4px;
+	border: 0;
+	background-color: var(--dbc);
+	color: #fff;
+	font-family: 'Squada One', cursive;
+	/*ဒါမွမဟုတ္ inherit နဲ႕ (အေမြဆက္ခံလို႔ရတယ္)*/
+}
+
+.form .btn:active{
+	transform: scale(0.98);
+}
+
+/*browser history မေပၚေစခ်င္ရင္ html attribute ျဖစ္ တဲ့ autocomplete ကို value off ေပးၿပီး ပိတ္လို႔ရတယ္*/
+
+
+17INHERIT WDF4077

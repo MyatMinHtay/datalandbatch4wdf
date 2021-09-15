@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Event Listener</title>
+</head>
+
+<body>
+	<div>
+		<div class="paragraph">
+			<p id="pgh">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+			<!-- <button id="hideme" onclick="hideme()">Hide Me</button> -->
+
+			<button id="hideme">Hide me</button>
+
+
+			<hr/>
+
+			<div>
+				<p id="greeting">I Love You</p>
+
+				<button name="red" id="red" class="">Red</button>
+
+				<button name="green" id="green" class="">green</button>
+
+				<button name="blue" id="blue" class="">blue</button>
+
+				<button name="orange" id="orange" class="">orange</button>
+			</div>
+
+			<hr/>
+
+			<div>
+				<label for="gender">Gender</label>
+				<select name="gender" id="gender" class="" onchange="getgender()">
+					<option disabled selected>Choose Gender</option>
+					<option value="1">Male</option>
+					<option value="0">Female</option>
+				</select>
+			</div>
+
+			<hr/>
+
+			<div>
+				<label for="country">Country</label>
+				<select name="country" id="country" class="" onchange="getcountry()">
+					
+					<option>Choose Country</option>
+					<option value="mm">Myanmar</option>
+					<option value="th">Thailand</option>
+				</select>
+
+				<br/>
+
+				<div id="mmcity">
+					<input type="radio" name="city" id="ygn" class="" value="ygn" /><label for="ygn">Yangon</label>
+
+					<input type="radio" name="city" id="mdy" class="" value="ygn" /><label for="mdy">Mandalay</label>
+
+					<input type="radio" name="city" id="bgo" class="" value="ygn" /><label for="bgo">Bago</label>
+				</div>
+
+				<div id="thcity">
+					<input type="radio" name="city" id="bkk" class="" value="bkk" /><label for="bkk">Bangkok</label>
+
+					<input type="radio" name="city" id="phk" class="" value="phk" /><label for="phk">Phuket</label>
+
+					<input type="radio" name="city" id="mst" class="" value="mst" /><label for="mst">Mae Sot</label>
+				</div>
+
+
+			</div>
+
+			<hr/>
+
+			<form action="" method="">
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" class="" onchange="myfun()" />
+
+				<br/><br/>
+
+				<label for="address">Address</label>
+				<input type="text" name="address" id="address" class="" />
+
+
+			</form>
+		</div>
+	</div>
+	<!-- အေပၚက p ကို js နဲ႕လွမ္းဖမ္းၿပီးေတာ့ css code ကို js ထဲမွာ သံုးခ်င္တဲ့အတြက္ .style ဆိုတာေလး ထည့္ေပးလိုက္တယ္ css ထဲမွာေ၇းရင္ : နဲ႕ ေရးေပမယ့္ js ထဲမွာက် = နဲ႕ေရးတယ္ -->
+<script type="text/javascript">
+	// function hideme(){
+	// 	// console.log("hay");
+	// 	let pgh = document.getElementById('pgh');
+	// 	// console.log(pgh);
+
+	// 	pgh.style.display = "none";
+	// }
+
+	// ေအာက္က ဟာက onclick နဲ႕ မဖမ္းပဲနဲ႕ btn ကို လာႏွိပ္သလားဆိုတာကိုနားေထာင္ထားတယ္ သံုးရတဲ့ method က addEventListener ဆိုတာနဲ႕သံုးရတယ္ သူ႔မွာ parameter ၂ခုရွိတယ္ ေ၇ွ႕ကဟာက type ျဖစ္ၿပီးေတာ့ ေနာက္ကဟာက nameless function တစ္ခု
+
+	let pgh = document.getElementById('pgh');
+	let btn = document.getElementById('hideme');
+
+	// console.log(btn);
+
+	// btn.addEventListener('click',function(){
+	// 	// pgh.style.display = "none";
+	// 	// btn.innerText = "Show Me";
+	// 	if(pgh.style.display === "none"){
+	// 		pgh.style.display = "block";
+	// 		btn.innerText = "Hide Me";
+	// 	}else{
+	// 		pgh.style.display = "none";
+	// 		btn.innerText = "Show Me";
+	// 	}
+	// });
+
+	// အေပၚကလို မေ၇းခ်င္ရင္ ေအာက္ကလိုေ၇းလို႔ရတယ္
+
+	btn.addEventListener('click',hideme);
+
+	function hideme(){
+		if(pgh.style.display === "none"){
+			pgh.style.display = "block";
+			btn.textContent = "Hide Me";
+		}else{
+			pgh.style.display = "none";
+			btn.textContent = "Show Me";
+		}
+	}
+
+
+
+	// For Color
+
+	let grt = document.getElementById('greeting');
+
+	document.getElementById('red').addEventListener('click',function(){
+		grt.style.color = "red";
+	});
+
+	document.getElementById('green').addEventListener('click',function(){
+		grt.style.color = "green";
+	});
+
+	document.getElementById('blue').addEventListener('click',function(){
+		grt.style.color = "blue";
+	});
+
+	document.getElementById('orange').addEventListener('click',function(){
+		grt.style.color = "orange";
+	});
+
+	//For Gender
+
+	function getgender(){
+		let gnd = document.getElementById('gender');
+
+		switch(gnd.value){
+			case "0":
+			window.alert("Thanks Lady");
+			break;
+			case "1":
+			window.alert("Thanks Tar Gyi");
+			break;
+		}
+	}
+
+	// For country
+	document.getElementById('mmcity').style.display = "none";
+	document.getElementById('thcity').style.display = "none";
+
+
+	function getcountry(){
+		let cty = document.getElementById('country');
+
+		switch(cty.value){
+			case "mm":
+			document.getElementById('mmcity').style.display ="block";
+			document.getElementById('thcity').style.display ="none";
+			break;
+			case "th":
+			document.getElementById('mmcity').style.display ="none";
+			document.getElementById('thcity').style.display ="block";
+			break;
+		}
+	}
+
+	// For text
+	function myfun(){
+		// console.log("hello thanks")
+		let textname = document.getElementById('name');
+
+		textname.value = textname.value.toUpperCase();
+	}
+</script>
+</body>
+</html>

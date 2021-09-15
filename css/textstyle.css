@@ -1,0 +1,30 @@
+.textalign{
+	/*text-align:right;*/
+	/*text-align:left;*/
+	/*text-align:center;*/
+	text-align:justify;
+}
+
+.textdecoration{
+	/*text-decoration:underline;*/
+	/*text-decoration:line-through;*/
+	text-decoration:overline;
+}
+
+/*over line က စာလံုးေပၚမွာ ေခါင္မိုးမိုးသလို မိုးတာ */
+
+.textline{
+	/*စာလံုးတစ္ခုနဲ႕ တစ္ခုျခားတာက letter spacing*/
+	/*letter-spacing:5px;
+*/
+	/*line-height:50px;*/
+	/*line-height: 3;
+*/	line-height: 300%;
+/*စာေၾကာင္းတစ္ေၾကာင္းနဲ႕ တစ္ေၾကာင္းျခားတာက line height*/
+}
+
+.textshadow{
+				/*h v b c*/
+				/*horizonal vertical blur color*/
+	text-shadow: -5px -5px 5px blue;
+}

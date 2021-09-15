@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Intro</title>
+</head>
+<body>
+    <h1>jQuery Intro</h1>
+
+
+    <div>
+        <h1 id="wel" class="come">Welcome to jQuery</h1>
+        <h2 id="mm" class="come">Welcome to Myanmar</h2>
+        <h3 id="th" class="come">Welcome to Thailand</h3>
+        <h4 id="slk" class="come">Welcome to Srilanka</h4>
+        <h5 id="indo" class="come">Welcome to Indonesia</h5>
+    </div>
+
+
+        <!-- jQuery JS1 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+        $(document).ready(function(){
+
+            // console.log('hay i am js code');
+            // console.error('i am js error');
+            // window.alert('hay i am js alert');
+            // if(window.confirm('Are you sure')){
+            //     console.log('Yes');
+            // }else{
+            //     console.log('No');
+            // }
+
+
+
+            // js code ေတြကို jquery area 
+            // ထဲမွာ ေ၇းလို႔ရ js is parent jquery
+            //  code ကို သူ႔ area အျပင္ဘက္ထြက္ေ၇းလို႔မရ
+
+            //  const test = document.getElementById('wel');
+            //  console.log(test);
+
+            // $("#wel");
+            // $(".come");
+            // $('h1');
+
+            // $("h1").fadeOut(); 
+            // $("h1").fadeOut(1000); //ေနရာပါေပ်ာက္သြားတယ္ 
+            
+            // $(".mm").fadeOut(2000);
+
+            // $("#th").fadeOut(3000);
+
+            // $("#slk").fadeTo(3000,0.3);
+            //fadeTo သည္ parameter ပါကိုပါရမယ္ ေ၇ွ႕က ေကာင္က time ေနာက္ကေကာင္က opicity 
+
+            // $("#indo").fadeToggle();
+            // $("#indo").fadeToggle();
+                // fadeToggle က  တစ္ခါေခၚရင္  ေပၚ ေနတာကို ေဖ်ာက္မယ္ ေနာက္တစ္ခါ ထပ္ေခၚရင္ ေပ်ာက္ေနတာကို ေပၚမယ္ looping ထဲထည့္လိုက္ရင္ ေပၚလိုက္ေပ်ာက္လိုက္ျဖစ္တယ္ 
+
+            $("#indo").fadeToggle(2000);
+            $("#indo").fadeToggle(1000);
+        })
+    
+    </script>
+</body>
+</html>
+
+<!-- l1 l2 l3 / jsoop -->
+<!-- l1 l2 l3 bs1 bs2 bs3 / react -->
+<!-- mysql laraval nodejs -->
+
+<!-- 1JQ WDF4077 -->

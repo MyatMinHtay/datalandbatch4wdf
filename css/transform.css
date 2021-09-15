@@ -1,0 +1,84 @@
+/*css မွာ variable ေၾကညာမယ္ဆိုရင္ :root ကိုသံုးရတယ္
+အထဲမွာ -- ႏွစ္ခုပါရမယ္ သူ႔ကိုေခၚသံုးမယ္ဆိုရင္ var function
+ကို သံုးေပးရတယ္ */
+
+/*Variable*/
+
+:root{
+	--rdcolor: orange;
+	--gn: #09e31b;
+}
+
+.div1{
+	width: 100px;
+	height: 80px;
+	background-color: var(--gn);
+	transform: rotate(180deg);
+}
+
+.div2{
+	width: 200px;
+	height: 80px;
+	background-color: aqua;
+	transform: rotate(45deg);
+}
+
+.div3{
+	width: 200px;
+	height: 80px;
+	background-color: yellow;
+	transform: rotateX(50deg);
+}
+
+.div4{
+	width: 200px;
+	height: 80px;
+	background-color: blue;
+	transform: rotateY(50deg);
+}
+
+.div5{
+	width: 200px;
+	height: 80px;
+	background-color: purple;
+	transform:scale(0.5); 
+	/*transform: scale(1.0); က ခ်ံုလိုက္ ခ်ဲလိုက္လုပ္လို႔ရတယ္ */
+}
+
+.country{
+	font-size: 16px;
+	/*chrome Safri Opera */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	/*တစ္ခ်ိဳ႕ property ေတြက ဘေရာက္ဇာသိေအာင္လုပ္ေပးရတယ္
+	တစ္ခ်ိဳ႕ (Vandors Prfix Properties)(-)*/
+	padding: 10px 25px 10px 10px;
+	background-image: url(../img/fav/favicon.png);
+	background-size: 15px;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position-x: 90%;
+}
+
+h1{
+	text-align: center;
+}
+
+p.text{
+	text-align: center;
+	color: red;
+}
+
+@media(max-width: 600px){
+	h1{
+		font-size: 25px;
+		color: blue;
+	}
+	p.text{
+		color: blue;
+	}
+}
+
+/*@import @font-face @media @keyframes */
+
+15MEDIA WDF4077

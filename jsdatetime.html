@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Date and Time</title>
+</head>
+<body>
+	
+	<small>Mg Myat Min Htay <span id="year"></span>hello</small>
+
+	<script type="text/javascript">
+		// console.log('hay');
+
+		let date = new Date();
+
+		// console.log(date);
+		// console.log(typeof date);
+
+		// let hours = new Date().getHours();
+		let hours = date.getHours();
+		// console.log(hours);
+
+		let minutes = date.getMinutes();
+		// console.log(minutes);
+
+		let seconds = date.getSeconds();
+		// console.log(seconds);
+
+		// 1s = 1000ms
+		// 1 jan 1970 ကေန ခုထိ  upnow
+
+		let gettime = date.getTime();
+		// console.log(gettime);်
+
+		let now = Date.now();
+		// console.log(now);
+
+		let getdate = date.getDate();
+		// console.log(getdate);
+
+		let month = date.getMonth();
+		// console.log(month);
+		// jan = 0
+		 // This is show 5 because of this is count from 0
+
+		 let day = date.getDay();
+		 console.log(day);
+		 // sun = 0
+
+		 // e commence website ေတြမွာဆိုရင္ ဒီfunction ေလးေတြ
+		 // သံုးၿပီး ဘယ္ေန႔ မွာ ဘယ္ပစၥည္းျပေပးပါ ဘယ္အခ်ိန္မွာ ဘယ္ပစၥည္းျပေပးပါဆိုတာမ်ိဳးေလးေတြ ကို ဖမ္းလို႔ရတယ္
+
+		 let year = date.getFullYear();
+		 // console.log(year);
+
+		 let utcyear = date.getUTCFullYear();
+		 console.log(utcyear - 2001);
+		 // utc = ကိုၾသဒိနိတ္ ယူနီဗာဆယ္ တိုင္မ္း
+
+		 document.getElementById("year").textContent = year;
+
+
+		 //.m d y h:m:s
+		 let bd = new Date("8-10-2013");
+		 bd = new Date('8/10/2013');
+		 bd = new Date(' Aug 10 2013');
+		 bd = new Date('8/10/2013 11:35:00');
+		  bd = new Date('Aug 10 2013 11:35:00');
+
+		  bd.setMonth(2);
+		  bd.setDate(20);
+		  bd.getFullYear(2020);
+		  bd.setHours(15);
+		  bd.setMinutes(10);
+		  bd.setSeconds(5);
+		 console.log(bd);
+
+		 // ပံုမွန္အတိုင္းရွိေနတာကို ယူခ်င္ရင္ get ကိုယ္က 
+		 // သြားထည့္ေပးခ်င္ရင္ set 
+		 
+
+
+
+
+
+
+	</script>
+</body>
+</html>
+
+<!-- 28DATE WDF4077 -->

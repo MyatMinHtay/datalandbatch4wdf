@@ -1,0 +1,159 @@
+.container .circle1{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background:conic-gradient(
+		yellow,
+		red,
+		green,
+		pink
+
+		);
+}
+
+.container .circle2{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background:conic-gradient(
+		#4281f5,
+		#9116a1,
+		#ebe310,
+		#9e0b1a
+
+		);
+}
+
+.container .circle3{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background:conic-gradient(
+		rgba(121,185,127,1.00),
+		rgba(246,89,68,1.00),
+		rgba(78,63,207,1.00),
+		rgba(195,57,207,1.00)
+
+		);
+}
+
+/*.container .circle4{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background:conic-gradient(
+		yellow 30%,
+		red 0 50%, /*0ေပးလိုက္တာက အဝါေရာင္ကို
+		ရပ္ပစ္တာ မေရာေတာ့ေအာင္လို႔ 
+		green 0 90%,
+		pink 0 100%
+
+		);
+}
+*/
+
+.container .circle4{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border-style: inset;
+	/* background:conic-gradient(
+		red 40%,
+		white 0 60%,
+		blue 0 100%
+		); */
+}
+
+.containertwo{
+	width: 300px;
+	height: 300px;
+	/*background-color: green;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	margin: auto;
+}
+
+.containertwo .c1{
+	width: 300px;
+	height: 300px;
+	background: black;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 2;
+}
+
+.containertwo .c2{
+	width: 320px;
+	height: 320px;
+	/*background:linear-gradient(
+		90deg,
+		red,
+		blue
+		);
+*/	
+	background: conic-gradient(
+		red 0,
+		green 25%,
+		red 0,
+		blue  70%,
+		red 0,
+		yellow  100%
+		);
+	border-radius: 50%;
+	position: absolute;
+
+	z-index: 1;
+
+}
+
+P{
+	color: #fff;
+	z-index: 3;
+}
+
+/*layer ေတြကို စီမယ္ဆိုရင္
+z-index ကိုသံုးရတယ္ 
+dafult က 0 တန္ဖိုးမ်ားေလ 
+အေပၚေရာက္ေလ*/
+
+
+.pointer{
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	display: block;
+	border-radius: 50%;
+}
+
+.pointer-container{
+	width: 20px;
+	height: 200px;
+	/*background-color: gray;*/
+	z-index: 4;
+	position: absolute;
+
+	top: -40px;
+	animation-name: myrotate;
+	animation-duration: 7s;
+	transform-origin: bottom;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+
+@keyframes myrotate{
+	from{
+		transform:rotate(0deg);
+	}
+
+	to{
+		transform:rotate(360deg);
+	}
+}
+
+
+
+
+/*14ZINDEX WDF4077*/

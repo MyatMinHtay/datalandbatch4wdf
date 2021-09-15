@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Datatype</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		// Typeof Operator
+
+		// String
+		const name = "kyaw kyaw";
+		console.log(typeof name);
+
+		// Number
+		const age = 24;
+		console.log(typeof(age));
+
+		// Boolean
+		let q = false;
+		console.log(typeof q);
+
+		// Undefined
+		let test;
+		console.log(typeof(test));
+
+		// null
+
+		// null ကို " " ထဲ ထည့္မေ၇းလည္း error မတက္ပါ 
+		// ဘာလို႔ဆို data type ျဖစ္ေနလို႔ data type ျဖစ္ေသာ္လည္း
+		// js ကေတာ့ object လို႔ေဖာ္ျပတယ္ 
+		const car = null;
+		console.error(car);
+
+		// console.error ကို console ထုတ္တာမ်ားလာတဲ့အခါ ကိုယ္ရွာခ်င္တာကို ေတြ႕ႏိုင္ဖို႔ ဘယ္နားေလာက္ေရာက္ၿပီလည္းၾကည့္ခ်င္ရင္  သံုးလို႔ရတယ္
+
+		// Object<class method>
+		const date = new Date();
+		console.log(typeof date);
+
+		// Object({})
+		// const address = "no 120, st 75*36 , Mandalay ";
+		const address = {
+			no:"no 120",
+			street: "st 75*36",
+			city:"Mandalay"
+		};
+
+		console.log(address);
+		// console.log(typeof address);
+
+		console.table(address);
+
+
+
+		// Array([])
+
+		const hobbies=["movie","music","sport"];
+		console.table(hobbies);
+		console.log(typeof hobbies);
+	</script>
+</body>
+</html>

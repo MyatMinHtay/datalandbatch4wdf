@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Js Type Conversion</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		let val;
+
+		// Number to String
+		// val = 5;
+
+		// val = String(5);
+
+		// val = val.toString();
+
+		// String အျဖစ္ေ၇းခ်င္ရင္ double quote or single quote or backtick or String(value) or (valeu).toString();(toString method)
+		//boolean to String
+			// val = String(false);
+		// val = false.toString();
+
+		// Date to String
+		// val = String(new Date());
+		// class method ျဖစ္ေနလို႔ to String နဲ႕ေတာ့ ေျပာင္းလို႔ မရဘူး
+
+		// Array[] to String
+
+		// val = [100,200,300,400];
+		// val = String(val);
+
+		// val = val.toString(val);
+
+		// String to Number
+		// val = "5";
+		// val = Number("5");
+		// val = +"5"
+		// val = parseInt("5");(ကိန္းျပည့္ေတြပဲရတယ္)
+
+		// ဘာလို႔ string ကေန number ကိုေျပာင္းဖို႔လိုတာလည္းဆိုရင္ 
+		// prompt နဲ႕ဖမ္းတဲ့ဟာလိုမ်ိဳးမွာ number ကိုထည့္လိုက္ေပမယ့္ ထြက္လာတာ value က string နဲ႕ပဲ 
+		// ထြက္လာတာမို႔လို႔  ျပန္ေျပာင္းေပးတဲ့ အခါမ်ိဳးမွာ သံုးရတယ္
+
+		val = "100.250";
+		val = Number("100.250");
+		val = +"100.250";
+		//val = parseInt("100.250");
+
+		// val = parseFloat("100.250");
+
+
+		//Boolean to Number
+
+		// val = true;
+		// val = Number(true);
+
+		//String Number (NaN = not a Number)
+		// val = "aung";
+		// val = Number("aung");
+
+		//Array to Number(NaN = not a number)
+		// val = [10,20,30];s
+		// val = Number(val);
+
+		val = 200.123456
+
+
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.toFixed(2));
+	</script>
+</body>
+</html>

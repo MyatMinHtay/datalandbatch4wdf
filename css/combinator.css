@@ -1,0 +1,93 @@
+/*Tag To Tag*/
+div span{
+	color: red;
+}
+
+/*ဒီလိုမွတ္တာကို combinator နဲ႕ မွတ္တယ္လို႔ ေခၚတယ္ 
+html tag ႏွစ္ခုသံုးသြားလို႔ tag to tag*/
+
+/*Tag to Tags*/
+div span p{
+	color: red;
+}
+
+/*Tag to Class*/
+div .address{
+	color: red;
+}
+
+/*Multi Tags to Class*/
+/*div ထဲက span ထဲက ႀကိဳက္တဲ့ element တစ္ခုရွိရမယ္ အဲ့ element ရဲ႕ classname 
+က name လို႔ ေပးထားရမယ္*/
+div span .name{
+	color: red;
+}
+
+/*Multi Tags to Same Class*/
+/*div ထဲမွာ span ထဲ မွာ small ျဖစ္ရမယ္ အဲ့small ရဲ႕ class name က name ျဖစ္ရမယ္*/
+/*div span small.name{
+	color: red;
+}*/
+
+/*Tags to Multi Class*/
+/*div .name .age{
+	color: blue;
+}*/
+/*Class to Multi Calss*/
+.bank .money .currency{
+	color: red;
+}
+
+/*Class to Tag*/
+/*.container p{
+	color: red;
+}*/
+
+/*Class to Tags*/
+/*.container b span{
+	color: blue;
+}*/
+
+/*Same Class*/
+/*.mobile.jpn{
+	color: red;
+}
+.mobile.cn{
+	color: blue;
+}
+.mobile.us{
+	color: darkred;
+}*/
+
+/*Class to Same class*/
+/*.vahicle .car.jpn{
+	color: red;
+}*/
+
+/*Class to Tag by gropu selector*/
+/*.div1 p,.div1 b{
+	color: green;
+}*/
+
+/*Child Selector( > )*/
+/*.div2 > p{
+	color: red;
+}*/
+
+/*General Sibling Selector(~)*/
+/*project တစ္ခုလံုးမွာ မိဘမရွိတဲ့ သူနဲ႕ မ်ိဳးတူတဲ့ေကာင္ေတြအားလံုးကို အလုပ္လုပ္ေပး
+သြားမယ္ 
+
+ေအာက္ဘက္ကိုပဲအလုပ္လုပ္ေပးတယ္ အေပၚဘက္ကို အလုပ္မလုပ္ေပးပါ 
+.div4 ~ p{
+	color: red;
+}*/
+
+/*Adjecent(ကပ္လ်က္တည္ရွိေနတာ) Sibling Selector(+)*/
+/*.div7 + p{
+	color: blue;
+}
+adjecent သည္ ကပ္လ်က္ ရွိကိုရွိေနရမယ္ ၾကားထဲမွာ တစ္ခုခုရွိေနရင္ အလုပ္
+မလုပ္ပါ */
+
+/* 8SIBLING WDF 4077 */

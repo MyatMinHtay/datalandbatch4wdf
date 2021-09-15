@@ -1,0 +1,104 @@
+.borderstyle1{
+	border-style: solid;
+}
+
+.borderstyle2{
+	border-style: dotted;
+}
+
+.borderstyle3{
+	border-style: double;
+}
+
+
+.borderstyle4{
+	border-style: dashed;
+}
+
+.borderstyle5{
+	border-style: inset;
+}
+
+.borderstyle6{
+	border-style: outset;
+}
+
+.bddesign{
+	width: 300px;
+	height: 300px;
+	background-color: orange;
+				/*all angel*/
+	/*border-radius: 20px;*/
+
+						/*top&bottom left&right*/
+	/*border-radius: 10px 50px;*/
+					/*topleft/ topright/ bottomright/bottomleft*/
+	/*border-radius: 10px 20px 50px 80px;*/
+	border-top-right-radius: 50px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 80px;	
+}
+
+li{
+	/*list-style-type: circle;*/
+
+	/*တကယ္လို႔ ဘာမွ မေပးခ်င္ရင္ */
+	/*list-style: none;*/
+	list-style-type: none;
+
+	/*ul က li ကိုလည္း ol က li လို */
+	/*နံပါတ္ေလးေတြနဲ႕ေပၚေအာင္လုပ္လိုရတယ္*/
+	/*list-style-type: decimal;*/
+	/*list-style-type: decimal-leading-zero;*/
+
+	border:1px;
+	border-style: solid;
+	border-color: orange;
+
+	/*list ရဲ႕ ဂဏန္းေတြ စက္ဝိုင္းေတြဘာညာကို border ထဲထည့္ခ်င္ရင္ 
+	ဒါကိုသံုးရတယ္*/
+	/*list-style-position: inside;*/
+	list-style-position: outside;
+
+}
+
+/*Attribute Selector*/
+input[type="text"]{
+	color: #fff;
+	background-color: green;
+}
+
+input[type="email"]{
+	color: blue;
+}
+
+body{
+	background-image:url(../img/icons/icon1.png);
+	background-repeat: no-repeat;
+	/*background-position: center ;*/
+
+	/*အေပၚက ညာဘက္မဟုတ္ပဲ ပေရာဂ်က္တစ္ခုလံုးရဲ႕ အလယ္ ညာဘက္
+	ကိုေရာက္သြားတယ္*/
+	background-position: right;
+
+	/*အေပၚ ဆံုး အလယ္တည့္တည့္ကိုေရာက္သြားတယ္*/
+	/*background-position: top;*/
+
+	/*top center bottom right left*/
+
+
+
+}
+
+/*element
+id
+cl
+universal
+attribute
+group 
+single*/
+
+/*name()=function
+name{}=object
+[]=array*/

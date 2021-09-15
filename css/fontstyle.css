@@ -1,0 +1,137 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');*/
+/*body{
+	font-family:Arial,Century,"Times New Roman";
+}
+*//*ေဖာင့္ေတြကိုလည္း အမ်ားႀကီးထည့္လ္ို႔ရတယ္ တစ္ခုမရွိရင္ တစ္ခု အလုပ္လုပ္လိမ့္မယ္*/
+/*ေဖာင့္ေတြကို တစ္ခုခ်င္းဆီလည္းေပးလို႔ ရတယ္*/
+
+
+@font-face{
+	font-family: abc;
+	src:local('Stick-Regular'),url(../libs/fonts/stick/Stick-Regular.ttf) format('woff');
+}
+
+@font-face{
+	font-family: mmh;
+	src:local('AkayaTelivigala-Regular'),url(../libs/fonts/akayatelivigala/AkayaTelivigala-Regular.ttf);
+}
+
+body{
+	/*font-family: 'abc', Century;*/
+}
+.p2{
+	font-family: mmh;
+}
+
+.p3{
+	font-family: mmh;
+	/*font ကို bold ျဖစ္ခ်င္ရင္ css မွာ font-weight ကို သံုးတယ္ 
+	ပံုမွန္ရွိတာ ၁၀၀ ကေန ၉၀၀ ထိရွိတယ္ သို႔ေသာ္ blod စျဖစ္တာက 
+	၆၀၀ ကေနစျဖစ္တာ 
+*/	
+	font-weight: bold;
+	/*italic ျဖစ္ခ်င္ရင္ font-style နဲ႕သံဳးတယ္ */
+	font-style: italic;
+
+	/*ပံုမွန္ စာပိုဒ္ေတြမွာ အပိုဒ္ခြဲထားသလိုျဖစ္ခ်င္ရင္ text-indent ကိုသံုးရတယ္*/
+	text-indent:50px;
+
+	/*စာပိုဒ္က စာေတြအကုန္လံုး အႀကီးစာလံုးေတြျဖစ္ေစခ်င္ရင္ 
+	text-transform ကိုသံုးတယ္*/
+	/*text-transform: uppercase;*/
+
+	/*စာပိုဒ္က စာေတြအကုန္လံုး အႀကီးစာလံုးေတြျဖစ္ေစခ်င္ရင္ 
+	text-transform  lowercase ကိုသံုးတယ္*/
+
+	/*text-transform: lowercase;*/
+
+	/*အေ၇ွ႕စာကားလံုးေလးေတြပဲ အႀကီးေျပာင္းခ်င္ရင္ capitalize ကို သံုးတယ္ */
+	/*text-transform: capitalize;*/
+
+	/*အကုန္အႀကီးေျပာင္းထားေပမယ့္ နဂိုႀကီးတဲ့ဟာက သူအတိုင္းႀကီးေနမယ္*/
+	font-variant: small-caps;
+
+
+}
+/*wdf 4103*/
+	 /*26R2P WDF4077*/
+/*Font Integrate*/
+/*1 Local Machin*/
+/*Google font(google api) 1.CDN Integrate, 2 Local integrate*/
+
+/*@rule 
+
+@import က အျပင္က ဟာကို လွမ္းခ်ိတ္ၿပီးသံုးတာ 
+@font-face က local ထဲက ေဖာင့္ကို အရိပ္အေနနဲ႕ ေခၚသံုးတာ 
+
+@font-face က font-familyနဲ႕ body က  font-familyက မတူဘူး 
+
+အရင္တုန္းက ဆိုရင္ local နဲ႕ url အျပင္ ေနာက္ထပ္ function တစ္ခု ထပ္ထည့္ေပးရေသးတယ္ 
+format ဆိုတဲ့ ဟာေလး အရင္တႏ္ုးက ဘေရာက္ဇာေတြက ttp  file type ကို မဖတ္ေပးႏိုင္ဘူး
+အဲ့တာေၾကာင္ံ format ဆိုတဲ့ဟာနဲ႕ format('woff')ဆိုၿပီးေျပာင္းေပးရတယ္ 
+*/
+
+.menutext{
+	font-family: mmh;
+	text-decoration: none;
+	background-color:green;
+	color:#fff;
+
+	/*ေဘးက အသားပိုေလးေတြ ထြက္ခ်င္ရင္ padding ကိုသံုးရတယ္*/
+			/*top&bottom  left&right*/
+	 /*padding: 10px 20px;*/
+
+	 /*ေလးဖက္ေလးလံလံုးတစ္ခုခ်င္းဆီလည္းေပးလို႔ရတယ္*/
+
+	 /*padding ကို ေလးဖက္ေလးလံထည့္ရင္ လက္ယာရစ္ အလုပ္လုပ္တယ္ */
+
+	 padding-top:10px;
+	 padding-bottom: 10px;
+	 padding-left: 20px;
+	 padding-right: 20px;
+
+
+}
+
+/*Pseudo Class(:)*/
+/*hover,active,visited*/
+
+.menutext:hover{
+	background-color:aqua;
+	color: orange;
+	border-radius: 100px;
+	/*border ကို လံုးလံုးေလးျဖစ္သြားခ်င္ရင္ border-radius: */
+}
+
+/*hover က pointer သြားတင္ရင္ ေျပာင္းသြားတာ active က click တင္ၿပီး ဖိလိုက္ရင္သိတာ*/
+.menutext:active{
+	color: red;
+}
+
+.a1{
+	text-decoration: none;
+}
+
+.a1:visited{
+	color: red;
+}
+
+.a1:hover{
+	color: blue;
+	font-size: 20px;
+}
+
+.imgdesign{
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	transition: 2s;
+}
+
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+
+}
+
+/*31Hover WDF4077*/

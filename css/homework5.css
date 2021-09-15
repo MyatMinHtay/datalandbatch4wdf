@@ -1,0 +1,108 @@
+
+*{
+	margin: auto;
+}
+
+.divtop{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	color: #fff;
+	background: url(../img/download.jpg);
+	text-shadow: -4px 0 2px black;
+
+}
+
+.divleft{
+	width: 250px;
+	height: 420px;
+	/*border: 2px solid red;*/
+	float: left;
+}
+
+.divleft .jerry{
+	background:green;
+	color: #fff;
+	margin-bottom:10px;
+	border-top-right-radius:25px;
+	border-bottom-right-radius:25px;
+	}
+
+.divleft .jerry:nth-of-type(3){
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+	height:200px;
+	padding-bottom:20px;
+}
+
+.jerry input{
+	margin:5px 5px 10px 5px;
+}
+
+.jerry pre{
+	font-size: 15px;
+	color: black;
+	font-weight:bold;
+	line-height:20px;
+}
+
+.divright{
+	width: 1050px;
+	height: 350px;
+	/*border: 2px solid red;*/
+	float: left;
+	margin-left:20px;
+}
+
+.divright .myat{
+	width: 200px;
+	height: 180px;
+	background-color: orange;
+	float: left;
+	margin-right: 50px;
+	margin-bottom: 70px;
+	margin-top: 20px;
+	color: #fff;
+	border-top-left-radius:50px ;
+	border-bottom-right-radius:50px;
+	line-height: 20px;
+	position: relative;
+	padding-bottom: 10px;
+
+}
+
+.myat .photo{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background:url(../img/user.png);
+	background-size:cover;
+	margin-top:10px;
+	margin-bottom:15px;
+	
+
+
+}
+
+.myat .book{
+	position: absolute;
+	
+	left: 10px;
+}
+
+.divright .myat:first-of-type{
+	margin-left: 50px;
+}
+
+
+
+p{
+	margin-top: 10px;
+}
+.divbottom{
+	width: 100%;
+	height: 100px;
+	background: url(../img/footer.jpg);
+	clear: both;
+}
+

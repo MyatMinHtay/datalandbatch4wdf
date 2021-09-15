@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Js Looping</title>
+</head>
+<body>
+	<!-- <h1>hello <span id="abc"></span></h1> -->
+	<script type="text/javascript">
+
+		// let i = prompt("enter your name");
+
+		// document.getElementById('abc').innerHTML = i;
+
+		// 1. for Loop
+		// for(statement1 start;statement2 end;statement3 increase/decrease){
+		// 	code to executed
+		// }
+		
+		
+		
+
+		// for(i ; i < 10; i++){
+		// 	console.log("Number = " + i);
+		// }
+
+		// console.log('i value is ' + i);
+
+		// for(i; i <= 10; i++){
+		// 	console.log("Number = " + i);
+		// }
+
+		// console.log('i value is ' + i);
+
+		// y = 0;
+		// for(y; y <= 10; y++){
+
+		// 	if(y===2){
+		// 		console.log('5 is my fav Number');
+		// 	}
+
+		// 	console.log('Y value is ' + y);
+		// }
+
+		// console.log('y =' +y);
+
+		// x = 0;
+		// for(x; x<10;x++){
+		// 	console.log('X value is ' +x);
+
+		// 	if(x === 2){
+		// 		console.log('2 is my fav Number');
+		// 		break; //ေတြ႕ရင္ ဆက္ အလုပ္မလုပ္ေတာ့ဘူး
+		// 	}
+		// 	//console.log('X value is ' + x);
+		// }
+
+
+		// let k = 10;
+		// for(k;k>=0;k--){
+		// 	console.log("K value is" + k);
+		// }
+		// console.log('k =' +k);
+
+
+		// forloop with Array
+		// let myarr = ["red","green","black","gray","blue","pink"];
+
+		// for(let m =0;m <myarr.length; m++){
+		// 	document.write(myarr[m] + "color" + "<br/>");
+
+		// }
+
+		// forloop with Array obj
+		// let peoples = [
+		// 	{name:'Aung Aung',age:20},
+		// 	{name:'Su Su',age:21},
+		// 	{name:'Mya Mya',age:23}
+		// ];
+
+		// for(let j = 0;j < peoples.length;j++){
+		// 	// document.write(peoples[j].name+"<br/>")
+
+		// 	// document.write("Name is ="+ peoples[j].name + ",Age is =" + peoples[j].age +"<br/>")
+
+		// 	document.write("Name is " + peoples[j].name);
+		// 	document.write("<br/>");
+		// 	document.write("Age is " + peoples[j].age);
+		// 	document.write("<br/>");
+		// 	document.write("<br/>");
+		// }
+
+
+		// 2 for in loop
+		// for(key in array or obj){
+		// 	code to excuted
+		// }
+
+		let students = {
+			name:"Aung Aung",
+			address:"Mandalay",
+			parent:"U Ba"
+		};
+
+		// console.log(students.parent);
+
+		// for  in loop မွာ object ျဖစ္ေပမယ့္ သူ႔ထဲက ေကာင္ေတြကိုေခၚခ်င္ရင္ array လိုပဲေခၚရတယ္ဘာလို႔ဆို သူ႔ရဲ႕ တည္ေဆာက္ပံုကို က array လိုတည္ေဆာက္ထားလို႔ 
+
+		// for(key in students){
+		// 	document.write(key + " is " + students[key] + "<br/>");
+		// }
+
+		// let myarrs = ["red","green","black","gray","blue","pink"];
+
+		// // console.log(myarrs[3]);
+
+		// for(key in myarrs){
+		// 	document.write(key + " is " + myarrs[key] + "<br/>");
+		// }
+
+		// 3.While loop
+		// strat
+		// while(end){
+		// 	code to executed
+		// 	after print ++ --
+		// }
+
+		// let b = 0;
+		// while(b <= 10){
+		// 	console.log("B value is " + b);
+		// 	b++;
+		// }
+		// console.log("b = "+ b);
+
+		// let c = 0;
+		// while(c < 10){
+		// 	c++;
+		// 	console.log("C value is " + c);
+		// }
+
+		// console.log("c = " + c);
+
+		// let l=0;
+
+		// while(l < myarrs.length){
+		// 	document.write("color is " + myarrs[l] + "<br/>");
+		// 	l++;
+		// }
+
+		// 4. do while loop
+		// start 
+		// do{
+		// 	before print ++ --
+		// 	code to executed
+		// 	after print ++ --
+		// }while(end);
+
+		let n = 0;
+
+		// do{
+		// 	console.log('N value is ' + n);
+		// 	n++;
+		// }while(n < 10);
+
+		// do{
+		// 	n++;
+		// 	console.log("N value is " + n);
+		// }while(n<10);
+		// console.log("n =" + n);
+
+		// let p = 0;
+		// do{
+		// 	document.write("My fav color is " + myarrs[p] + "<br/>");
+		// 	p++;
+		// }while(p < myarrs.length);
+
+
+		let myarrs = ["red","green","black","gray","blue","pink"];
+								// (value,index,array)
+		myarrs.forEach(function(myarr,idx,arr){
+			console.log(arr);
+			document.write("index number is " + idx + "value is " + myarr + " color" + "<br/>");
+		});
+
+		// forEach သည္ filter နဲ႕အတူတူပဲ သို႔ေသာ္ forEach က 
+		// looping အစစ္အမွန္ filter သည္ looping ပတ္ေသာ္ျငားလည္း output က array အေနနဲ႕ပဲျပန္ထုတ္ေပးတယ္
+
+		// 6 Map 
+
+		const users = [
+		 	{id:1,name:'aung aung'},
+		 	{id:2,name:'maung maung'},
+		 	{id:3,name:'naung naung'}
+		];
+
+		const ids = users.map(function(user){
+			return user.id;
+		});
+
+		console.log(ids);
+
+
+		const names = users.map(function(user){
+			return user.name
+		});
+
+		console.log(names);
+
+		// map နဲ႕ filter သည္ သေဘာတရားခ်င္းတူတယ္ 
+		// ေ၇းပံုေ၇းနည္းကလည္း forEach loop နဲ႕တူတယ္ 
+		// သို႔ေသာ္ forEach သည္ pure value ထုတ္ေပးၿပီးေတာ့ 
+		// map နဲ႕ filter ကေတာ့ array နဲ႕ထုတ္ေပးတယ္
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
+
+<!-- 7LOOP WDF4077 -->
+ <!-- 19MAP WDF4077 -->

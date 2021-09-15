@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Js Object Literals</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Js Object (Array as Object (JSON - API))
+
+		let obj1 = {
+			firstname : "Myat",
+			middlename : "Min",
+			lastname : "Htay",
+		};
+
+		console.log(obj1);
+		console.table(obj1);
+
+		console.log(obj1.firstname);
+		console.log(obj1.middlename);
+		console.log(obj1.lastname);
+
+		let obj2 = {
+			firstname : "Kyaw",
+			lastname : "Gyi",
+			age : 52,
+			email : "kyawgyi52@gmail.com",
+			hobbies : ["tiktok","music","sport"],
+			address : {
+				street : "Tamwe",
+				city : "Yangon"
+			},
+			phone : "09123456"
+		};
+
+		console.log(obj2);
+		console.table(obj2);
+
+		console.log(obj2.firstname);
+		console.log(obj2.lastname);
+		console.log(obj2.age);
+		console.log(obj2.email);
+		console.log(obj2.hobbies[0]);
+		console.log(obj2.hobbies[2]);
+		console.log(obj2.address.street);
+		console.log(obj2.address.city);
+		console.log(obj2.phone);
+
+
+
+		const todo = {
+			add:function(){
+				console.log("Add todo ...");
+			},
+			edit:function(x){
+				console.log("Have to " + x);
+			}
+		};
+
+		todo.add();
+		todo.edit('cook');
+
+		todo.delete = function(){
+			console.log('Delete all notes')
+		};
+
+		todo.delete();
+		// obj ေတြထဲကေခၚရင္ .name 
+		// Array ေတြထဲက ေခၚရင္ .[index number]
+		// ခု todo obj ထဲမွာ ရွိေနတဲ့function ေတြက printout function ေတြမို႔လို႔ printout ျပန္ထုတ္စရာမလိုေတာ့ဘူး
+
+		// တကယ္လို႔ return function ျဖစ္ေနခဲ့ရင္ console.log(todo.add()); လို႔ေခၚေပးရမယ္
+
+		// array ေတြထဲကိုထည့္ရင္ arrat[index number] = blah blah ဆိုၿပီးထည့္တယ္ obj မွာဆိုရင္ obj name . ထည့္ခ်င္တဲ့ ဟာ(variable , object, function ,etc)
+	</script>
+</body>
+</html>
+
+<!-- WDF 4056 Aye Chan Nyein -->

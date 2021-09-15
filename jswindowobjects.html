@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Object</title>
+</head>
+
+<body>
+    <!-- <div style="margin-top: 1000px;"></div> -->
+    <button onclick="printme()">Print</button>
+
+    <button onclick="reloadme()">Reload</button>
+
+    <hr/>
+    <script type="text/javascript">
+        // console.log('hay');
+
+        // Alert 
+        // window.alert('Hello World');
+
+        //Prompt
+        // const input = prompt('Write Something');
+        // console.log(input);
+        // console.log(typeof input);
+
+        // Confirm
+        // if(confirm("Are you sure")){
+        //     console.log("Yes , i want to delete");
+        // }else{
+        //     console.log('OHH!!! , sorry i don\'t want ');
+        // }
+
+        // Print 
+        // window.print();
+
+        function printme(){
+            // window.print();
+            // print();
+        }
+
+        let val;
+        // Outer Width 
+        // val = window.outerWidth; //browser ဟိုဘက္ထိပ္နဲ႕ ဒီဘက္ထိပ္ ရွိသေလာက္ width (px)
+
+        // console.log('this is outer width =' + val);
+
+        // Inner Width 
+
+        // val = window.innerWeight; // browser မွာ console ဖြင့္ထားတရင္ ဘယ္ဘက္ထိပ္ကေန console ဖြင့္လိုက္တဲ့ ေနရာထိ width(px)
+        // console.log('this is inner width = ' + val);
+
+        //  Outer Height 
+        //  val = window.outerHeight; //browser အေပၚဘားကေန ေအာက္ထိ ရွိသေလာက္ height (px)
+        // console.log('this is outer height =' + val);
+
+         //  Inner Height 
+        //  val = window.innerHeight; //browser အေပၚထိပ္ကေန console  ရွိသေလာက္ ထိပ္ထိ  height (px)
+        // console.log('this is inner height =' + val);
+
+        // Scroll Points scroll ဆြဲလိုက္မွ တစ္ခုခုျဖစ္ေစခ်င္တယ္ဆိုတယ္ေနရာေတြမွာ သံုးတယ္
+        // val = window.scrollY;
+        // console.log('ScrollY value = ' + val);
+
+        // Location object 
+
+        val = window.location;
+
+        // console.log(val);
+
+        // Redirect (ကိုယ္သြားေစခ်င္တဲ့ site ကို value ေပးလိုက္ယံုပဲ )
+
+        // window.location.href = "https://google.com";
+
+        // Reload 
+        // window.location.reload();
+
+        // function reloadme(){
+        //     window.location.reload();
+        // }
+
+        // Navigator Object (js က netscape ေပၚမွာ run တယ္ php က apache ေပၚမွာ run တယ္)
+        // val = window.navigator;
+        // console.log(val);
+        document.write('appName = ' + window.navigator.appName + '<br/>');
+        document.write('appVersion = ' + window.navigator.appVersion + '<br/>');
+        document.write('userAgent = ' + window.navigator.userAgent + '<br/>');
+        document.write('platform = ' + window.navigator.platform + '<br/>');
+        document.write('javaenabled() = ' + window.navigator.javaEnabled() + '<br/>');
+        document.write('language = ' + window.navigator.language + '<br/>');//(စက္ ရဲ႕ language ကို စစ္တာ)
+        document.write('online = ' + window.navigator.onLine + '<br/>'); //(စက္ အြန္လိုင္းျဖစ္မျဖစ္ စစ္တာ)
+        
+
+
+    </script>
+</body>
+</html>
+
+<!-- 16NVG WDF4077 -->

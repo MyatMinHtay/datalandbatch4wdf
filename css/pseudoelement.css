@@ -1,0 +1,37 @@
+/*.paragraph1::first-line{
+	color: red;
+}
+*/
+/*pseudoclass(:) full coloum တစ္ခုတည္းနဲ႕ေ၇း၇တယ္
+
+pseudoelement(::) full coloum ႏွစ္ခုနဲ႕ေ၇းရတယ္*/
+
+/*စာပိုဒ္ရဲ႕ေရွ႕မွာ စကားလံုးေလးထပ္ထည့္ခ်င္ရင္ html ရဲ႕ tag ထဲမွာမေ၇းပဲ 
+css ကေနလွမ္းထည့္မယ္ဆို၇င္ pseudoclass before ကို သံုး၇တယ္*/
+
+/*.paragraph1::before{
+	content: "abcd ";
+}*/
+
+/*before ေတာင္ရွိမွေတာ့ after လည္းရွိမယ္ after ကို modern box ေလးေတြ
+ဖန္တီတဲ့ေနရာေတြမွာသံုးးတယ္ အဲ့တာေတြသံုးမယ္ ဆို၇င္ content "" ဆိုတာေလး 
+ပါကိုပါရမယ္ မပါရင္ အလုပ္မလုပ္ဘူး */
+
+/*.paragraph1::after{
+	content: " EFG";
+}*/
+
+/*စာပိုဒ္ထဲက ပထမဆံုးစာလံုးကို select မွတ္ခ်င္ရင္ first-letter ကိုသံုးရတယ္
+*/
+/*.paragraph1::first-letter{
+	color: red;
+	font-size: 50px;
+}*/
+
+/*select မွတ္တဲ့ ကာလာကိုေျပာင္းခ်င္ရင္ pseudoelement ျဖစ္တဲ့  selection ကို 
+သံုးရတယ္ */
+
+.paragraph1::selection{
+	background-color: orange;
+	color: #fff;
+}

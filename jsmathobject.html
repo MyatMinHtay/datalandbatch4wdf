@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Js Math Object</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Math Object 
+
+		// Math.round
+		// ဒသမ ကိန္းမွာ ၅ထက္ေက်ာ္ရင္ ေရွ႕တစ္တိုးသြားတယ္ 
+		let val;
+		val = Math.round(2.6); //Result 3
+		val = Math.round(2.4); //Result 2
+
+		// Math.floor
+		// ဒသမေနာက္မွာ ဘယ္ေလာက္စြန္းစြန္း ေ၇ွ႕က ဂဏန္းကိုပဲယူတယ္
+
+		val = Math.floor(2.8); //Result 2
+		val = Math.floor(2.1);	//Result 2
+
+		val = Math.ceil(2.6); //Result 3
+		val = Math.ceil(2.1); //Result 3
+
+		//round က သခၤ်ာနည္းအတိုင္းပဲ
+		//floor က ၾကမ္းျပင္ဆိုေတာ့ အၿမဲတမ္းအရွံုးခံတယ္
+		//ceil က မ်က္ႏွာက်က္ ကိုယ့္ေခါင္းေပၚမွာရွိေတာ့ ေခါင္းပံု
+		// ျဖတ္တယ္
+
+		//Math.sqrt(); square root 
+		val = Math.sqrt(49); //Square root= Result 7
+
+		//Math.pow(base,power); (အေျခ,ထပ္ၫႊန္း)
+
+		val = Math.pow(7,2); //Result = 49
+
+		// Math.abs(); (ပကတိတန္ဖိုးကိုပဲယူတယ္ + - မသိဘူး)
+		val = Math.abs(100); //absolute = Result 100
+		val = Math.abs(-100); //absolute = Result 100
+		
+		// Main.min(); parameter ထဲက အနည္းဆံုးတန္ဖိုး
+		val = Math.min(8,5,2,1,20,7,9); // min number = Result 1
+
+		//Main.max(); prarmeter ထဲက အမ်ားဆံုးတန္ဖိုး
+		val = Math.max(8,5,2,1,20,7,9); //max number = Result 20
+
+		// Math.random();
+		// val=Math.random();
+		val = Math.floor(Math.random() * 10000);
+
+
+
+
+
+
+
+
+		console.log(val);
+
+
+
+
+	</script>
+</body>
+</html>

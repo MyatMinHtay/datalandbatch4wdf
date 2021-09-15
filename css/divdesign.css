@@ -1,0 +1,95 @@
+*{
+	cursor: pointer;
+	/**က universal selecter*/
+}
+.firstdiv{
+	background-color:rgba(225,27,127,1.00);
+	font-size:20px;
+	width:200px;
+	height:100px;
+	color:red;
+	/*cursor: pointer;*/
+	opacity: 0.5;
+	/*ေဖ်ာက္ထားခ်င္ရင္ opacity ကို သံုးရတယ္*/
+}
+
+.divtwo{
+	width:500px;
+	height:500px;
+		/*cursor: pointer;*/
+
+	/*borderေရးရင္  သံုးခုတြဲၿပီး အလုပ္လုပ္တယ္ 
+	border border-style border-color*/
+	/*border:2px;
+	border-style:solid;
+	border-color:red;
+*/
+	/*CSSမွာ ကုတ္ကို ခ်ဳပ္ေ၇းလို႔ရတယ္ ဘာလို႔ဆို ကုတ္ေဖာင္းပြမႈကိုေ၇ွာင္ခ်င္လို႔ */
+	border:5px solid red;
+	background-image:url(../img/cover/bg1.jpg);
+
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-repeat: repeat-x; ဆိုရင္ x ဝင္႐ိုးအတိုင္း repeat ထြက္မယ္*/
+	/*background-repeat: repeat-y; ဆိုရင္ y ဝင္႐ိုးအတိုင္း repeat ထြက္မယ္*/
+}
+
+.divthree{
+	width: 300px;
+	height: 300px;
+	border:3px solid red;
+	font-size: 20px;
+	color: white;
+	/*background:linear-gradient(blue,orange,red,green);*/
+	/*background: linear-gradient(rgba(66,238,127,1.00),rgba(107,206,219,1.00))*/
+	/*background: linear-gradient(#03fc20,#fcc603);*/
+	/*background: linear-gradient(90deg,green,blue);*/
+	/*gradient အေရာင္းကိုလွည့္ခ်င္ရင္ deg ကို လွည့္ၿပီးသံုးလို႔ ရမယ္*/
+
+	/*background: radial-gradient(blue,white);*/
+	/*background: radial-gradient(#03fc20,#fcc603);*/
+	background: radial-gradient(rgba(66,238,127,1.00),rgba(107,206,219,1.00));
+	/*radial gradient က  background image မွာလည္းအလုပ္လုပ္တယ္ deg သံဳးၿပီး
+	လွည့္လို႔မရဘူး ဘာလို႔ဆိုေတာ့ centre မွာအလုပ္လုပ္တာမို႔လို႔ */
+}
+
+.divfour{
+	width: 200px;
+	height: 300px;
+	font-size: 30px;
+	color: green;
+	/*background-image:linear-gradient(rgba(66,238,127,0.4),rgba(107,206,219,0.4)),url(../img/cover/bg2.jpg);*/
+	background-repeat: no-repeat;
+
+	background: linear-gradient(45deg,rgba(66,238,127,0.5) 40%,rgba(107,206,219,0.5) 30%),url(../img/cover/bg2.jpg);
+
+
+}
+
+
+
+/*ပံုကိုေနရာခ်ခ်င္ရင္ background-position ကိုသံုးတယ္*/
+
+/*function
+name နဲ႕ () နဲ႕ကပ္ေနရင္ function
+name()
+
+value တစ္ခုတည္းဆို၇င္ single parameter function
+name(value)
+
+value ႏွစ္ခုဆို၇င္ေတာ့ multi parameter function
+name(value,vlaue)
+value တစ္ခုနဲ႕ တစ္ခုကို ေကာ္မာ (,) ေလးနဲ႕ျခားတယ္
+*/
+
+/*25CDM WDF4077*/
+
+/*color ေပးတဲ့ေနရာမွာ name နဲ႕ေပးလို႔ရတယ္ hax code နဲ႕ေပးလို႔ရတယ္ rgba နဲ႕ေပးလို႔ ရတယ္*/
+
+/*gradient မွာ ၂မ်ိဳးရွိတယ္ 
+linear-gradient ရယ္ 
+redial graditen ရယ္*/
+
+/*background color က solid color တစ္ခုပဲရတယ္
+background က အကုန္ရ 
+background image လည္း gradient color ရတယ္*/

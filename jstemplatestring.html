@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template String</title>
+</head>
+<body>
+
+	
+
+
+	<script type="text/javascript">
+
+		const name = "kyaw kyaw",
+				age = 24,
+				city = "Mandalay",
+				job = "Developer";
+
+		// console.log(name);
+
+		// const html;  can't declare const နဲ႕ေၾကညာရင္ overwrite လုပ္လို႔မရဘူး value မထည့္ပဲ ေၾကညာလို႔မရဘူး 
+
+
+		let html;
+		console.log(html);
+
+		// Without Template String
+
+		html = '<ul>'+
+		'<li>Name : '+ name + '</li>'+
+		'<li> Age :'+ age +'</li>'+
+		'<li> City : '+ city + '</li>'+
+		'<li>job : '+ job + '</li>'+
+		'</ul>';
+
+		document.write(html);
+
+		// with template string backtick ထဲမွာေရးတာကိုေျပာတာ
+
+		html = `
+		<ul>
+		<li>Name : ${name}</li>
+		<li>Age : ${age}</li>
+		<li>city : ${city}</li>
+		<li>Job : ${job}</li>
+		</ul>
+		`;
+
+		document.write(html);
+	</script>
+</body>
+</html>
+
+<!-- 8SIBLING WDF4077 
+ 14ZINDEX WDF4077 
+ 15MEDIA WDF4077 
+16ROOT WDF4077 
+ 17INHERIT WDF4077 
+ 21LOG WDF4077 
+ 23WRITE WDF4077  -->

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js regular function</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		
+	// Regular Function
+	// function name(){
+	// 	code to be executed
+	// }
+
+	// 1 Manual function ဆိုတာက ( ) ထဲမွာ value မထည့္ရတဲ့ function ေတြကိုေျပာတာ
+
+
+
+
+	// 1 Manual Function
+	function greet(){
+		console.log('Hello Mandalay');
+	}
+
+
+	// greet();
+
+	function printalert(){
+		window.alert('Hello Myanmar');
+	}
+
+	// printalert();
+
+	function hello(){
+		return "Hello Yangon";
+	}
+
+	// return သည္ printout မလုပ္ေပးပါ တန္ဖိုးကိုပဲ return ျပန္ေပးပါတယ္ သူ႔ကိုလိုခ်င္ရင္ print out ထပ္ထုတ္ေပးရပါမယ္
+
+	// ကိုယ့္ကုတ္ထဲမွာ ပဲျပန္သံုးခ်င္တယ္ဆို၇င္ return ကိုသံုးရမယ္ 
+	// တကယ္လို႔ client ကို ျမင္ေစခ်င္ရင္ေတာ့ printout လုပ္ေပးရပါမယ္
+	// console.log(hello());
+	// window.alert(hello());
+	// document.write(hello());
+
+
+	// 2.Parameter Function
+	// a. single Parameter function
+	// b. multi Parameter function
+
+
+	// a. single Parameter function
+
+	function myfun1(city){
+		console.log("Hello " + city);
+	}
+
+	myfun1("Mandalay");
+	myfun1("Yangon");
+	myfun1("Bago");
+	myfun1();
+
+	// parameter မထည့္လိုက္ရင္ undefined ျပတယ္ တကယ္လို႔ 
+	// undefined မျပေစခ်င္ရင္ dafult value ေပးထားလို႔ရတယ္
+
+	function myfun2(city="Yangon"){
+		console.log(`Hello ${city}`);
+	}
+
+	myfun2();
+
+	// b multi Parameter function
+
+	function multifun1(x,y,z){
+		console.log(`x value is = ${x} and Y value is ${y} and z value is = ${z}`)
+	}
+
+	multifun1(10,20,30);
+
+
+	// code ဘယ္ေလာက္ေ၇းေ၇း return ျပန္တာ မွားေနရင္ အလကားပဲ
+	function multifun2(x,y,z){
+		const result = x+y+z;
+		return result;
+	}
+
+	console.log(multifun2(10,20,30));
+
+	function multifun3(x,y,z=100){
+		const result = x+y+z;
+		return result;
+	}
+
+	console.log(multifun3(10,20,30));
+
+
+	let num1 = 0;
+	let num2 = 1;
+	let num3 = 2;
+	
+	function multifun4(a,b,c){
+
+
+
+		console.log(`A value is ${a} , B value is ${b} , C value is ${c}`)
+	}
+
+	multifun4(num1,num2,num3);
+
+	// variable နဲ႕တစ္ဆင့္ခံၿပီး ထည့္လို႔လည္းရတယ္ သို႔ေသာ္ variable သည္ global variable ျဖစ္ရမယ္
+
+	// 3. Name Less Function (Anonymous Function)
+
+	// Nameless function ေအာက္မွာ အုပ္စု ၃ခုရွိတယ္
+
+	// let annfun = function(a){
+	// 	document.write('My value is ' + a);
+	// }
+
+	// annfun(500);
+
+	// Constructor Function (By String)
+
+	// အထဲကဟာမွန္သမွ် String ျဖစ္ရမယ္ ဘာလို႔လည္းဆိုေတာ့
+	// သူ႔format ကို က string ျဖစ္ေနလို႔ ၿပီးေတာ့ class method ျဖစ္ေနတဲ့အတြက္ F က အႀကီးျဖစ္သြားမယ္
+	// class method ျဖစ္တဲ့အတြက္ ေရွ႕က new ဆိုတဲ့ keywords ေလး ထည့္ေပးရတယ္
+
+	// let confun = new Function("a","b","c","return a+b");
+	// console.log(confun(10,20,30));
+
+	// Self Invoking Function
+	// (IIFE) Immediately invokable function Expression
+
+
+	// Method 1 (Self Invoking Function)
+	let slfun1 = function(a){
+		document.write(`I am self invoking function , my value is ${a}`);
+	}(500);
+
+	document.write("<hr/>");
+
+	// Method 2 (Self Invoking Function)
+
+	(function(a){
+		document.write(`I am self invoking function , my value is ${a}`);
+	})(700);
+
+
+	// Using Function t Function
+	// အေပၚကလည္း return function ေအာက္ကလည္း return function မို႔လို႔ printout ျပန္ထုတ္ေပးရတယ္ 
+
+	// funone ကိုေခၚရင္ Hello world ကို return ျပန္မယ္
+	// funtwo က က် parameter ေတာင္းထားတယ္ ထည့္ေပးလိုက္ရင္ ထည့္ေပးလိုက္တဲ့ ဟာကိုပဲ return ျပန္ေပးမယ္
+
+	// function funone(){
+	// 	return "Hello World";
+	// }
+
+	// function funtwo(fun){
+	// 	return fun;
+	// }
+
+	// console.log(funtwo(funone()));
+
+	// Get function Name(.name)
+
+	// ခါတိုင္းက အၿမဲတမ္း function ရဲ႕ value ပဲယူခဲ့တာ အခုဟာက name ကိုယူတာ
+
+	function funone(){
+		return "Hello Mandalay";
+	}
+
+	function funtwo(abc){
+		console.log(abc.name);
+	}
+
+	funtwo(funone);
+
+
+
+
+
+	</script>
+</body>
+</html>
+
+<!-- 12FUN WDF4077 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Function
+1.Regular Function
+2.Arrow Function -->

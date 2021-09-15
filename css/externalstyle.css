@@ -1,0 +1,37 @@
+/*Selectors
+
+Element Selector
+
+Single Selector
+Group Selectors*/
+p{
+	color:red;
+}
+
+/*Group Selector(,)*/
+h1,h2,h3,h4{
+	color:blue;
+}
+
+/*Group ID Selector*/
+#myself,#sakasa{
+	color:red;
+}
+
+/*Class Selector*/
+.ph{
+	color:blue;
+}
+
+.f20{
+	font-size:20px;
+}
+
+/*id ရဲ႕ အားနည္းခ်က္ေတြက unique ျဖစ္ရမွယ္ 
+ႏွစ္ခုသံုးခု ေ၇းလို႔ မရလို႔ css က class ကို ယူသံုးလိုက္ရတာ 
+id နဲ႕သံုးလို႔မရဘူးလားဆိုေတာ့ရတယ္။
+*/
+
+.divone,.divtwo{
+	color:aqua;
+}

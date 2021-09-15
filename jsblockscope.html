@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Block Scope</title>
+</head>
+<body>
+    
+
+    <script type="text/javascript">
+    
+    
+    // Global Scope (can call anywhere / whenever )
+
+    var a = 1;
+    let b = 2;
+    const c = 3;
+
+    console.log('Global Scope =' ,a,b,c);
+
+    // Function Scope 
+
+    function test(){
+        // console.log(a,b,c); //global scope variable can call in function scope
+
+        let x = 100;
+        // console.log(x);
+
+        var a = 4;
+        let b = 5;
+        const c = 6;
+
+        console.log('Function Scop =' ,a,b,c );
+    }
+
+    test();
+
+    console.log('Function Scop =' ,a,b,c );
+
+    // console.log(x); 
+    // global scope ထဲက function ကို 
+    // function scope မွာ ေခၚသံုးလို႔ရၿပီး function 
+    // scope ထဲက variable ကို global scope 
+    // မွာေခၚသံုးလို႔မရပါ  သို႔ ေသာ္ function scope ထဲက ဟာကို 
+    // global ေၾကညာေပးလိုက္ရင္ သံုးလို႔ရတယ္ 
+
+    // If Scope (Block Scope)
+
+    // if(true){
+
+    //     var a = 7;
+    //     let b = 8;
+    //     const c =9;
+
+    //     console.log('IF Scope =',a,b,c); // var က ထြက္တယ္ 
+    // }
+
+    // console.log('Global Scope =' ,a,b,c);
+
+    // Loop Scope (Block Scope) 
+
+    for(var a=0;a<10;a++){
+        // console.log("Loop = " + a);
+    }
+
+    for(let b=0;b<10;b++){
+         console.log("Loop = " + b);
+    }
+
+    // console.log('Global Scope = ',a,b,c);
+
+    //block scope ေတြ နဲ႕ global scope ေတြမွာ const နဲ႕ေၾကညာ
+    // ထားတဲ့ဟာေတြက လံုးဝ ေျပာင္းလဲလို႔ မရပါ var နဲ႕ေၾကညာထားရင္ေတာ့  scope 
+    // ႏွစ္ခုလံဳးက တန္ဖိုးေျပာင္းလဲႏိုင္ၿပီး let နဲ႕ေၾကညာထားရင္ေတာ့ တန္ဖိုး မေျပာင္းလဲပါ 
+    
+    </script>
+</body>
+</html>
